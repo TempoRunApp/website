@@ -32,6 +32,9 @@ gem 'jbuilder', '~> 1.0.1'
 # Thin is a fast web server for Rack applications.
 gem 'thin'
 
+# High Voltage makes it easy to display static web pages (e.g. welcome, about, faq, etc.)
+gem 'high_voltage'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
