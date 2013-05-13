@@ -1,4 +1,9 @@
 GraysonwrightCom::Application.routes.draw do
+
+  # Pages routing
+  # This should be the last thing in the gemfile, to avoid naming conflicts
+  get '/:id' => 'high_voltage/pages#show', as: :static, via: :get
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
