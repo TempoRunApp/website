@@ -1,4 +1,4 @@
-GraysonwrightCom::Application.routes.draw do
+Molehill::Application.routes.draw do
 
   # Pages routing
   # This should be the last thing in the gemfile, to avoid naming conflicts

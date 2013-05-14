@@ -9,4 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-GraysonwrightCom::Application.config.secret_key_base = '7257cbe2f9637a3729212abd4cf78700db3bf36158b5811cad8027157af7f57384bc4c91879f2f9b6068546d8f2839478d711246059c3ae59d1ee052d372a496'
+Molehill::Application.config.secret_key_base = '7257cbe2f9637a3729212abd4cf78700db3bf36158b5811cad8027157af7f57384bc4c91879f2f9b6068546d8f2839478d711246059c3ae59d1ee052d372a496'
