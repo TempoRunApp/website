@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-GraysonwrightCom::Application.load_tasks
+Molehill::Application.load_tasks
