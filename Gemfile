@@ -5,6 +5,8 @@ ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0.beta1'
 
+# Let Heroku manage the production database using PostgreSQL
+# Locally, we'll stick with SQLite
 gem 'sqlite3', group: [:development, :test]
 gem 'pg', group: :production
 
@@ -21,7 +23,7 @@ group :assets do
 end
 
 group :development, :test do
-    gem 'rspec-rails'
+  gem 'rspec-rails'
 end
 
 gem 'jquery-rails'
