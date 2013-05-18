@@ -6,3 +6,6 @@ $visual-grid: true;
 
 /* Styles for the layouts defined in app/views/layouts */
 @import "layouts";
+
+/* Styles for static pages*/
+@import "pages/*";
