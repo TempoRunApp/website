@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Molehill::Application.load_tasks
+AcmMsu::Application.load_tasks
