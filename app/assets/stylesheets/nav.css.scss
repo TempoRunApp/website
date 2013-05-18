@@ -1,0 +1,22 @@
+/* Styles for the navigation bar */
+#nav
+{
+  @include outer-container;
+
+  nav {
+    @include span-columns(12 of 12);
+    padding-top: 1em;
+
+    a {
+      @include span-columns(2 of 12);
+
+      text-decoration: none;
+      color: #0D1D26;
+
+      font-size: 2em;
+      padding-top: .5em;
+
+    }
+
+  }
+}

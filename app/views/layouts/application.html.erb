@@ -8,7 +8,20 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="nav">
+  <nav>
+    <%= link_to 'ACM@MSU', :root, id: 'home' %>
+    <%= link_to 'People', :root %>
+    <%= link_to 'Events', :root %>
+    <%= link_to 'Join Us', :root %>
+  </nav>
+</div>
+
+<div id="wrapper">
+
+  <%= yield %>
+
+</div>
 
 </body>
 </html>
