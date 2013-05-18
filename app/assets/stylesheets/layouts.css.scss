@@ -1,18 +1,11 @@
 /* Define styles for app/views/layouts/application.html.erb */
 
 body {
-  background-color: #F9F8EC;
   margin-top: 0px;
 }
 
 div#wrapper {
-  background-color: #FFF;
-
   @include outer-container;
-  margin-top: 2em;
-  border-radius: 4px;
-  padding: 2em;
-  box-shadow: 0 0 10px -2px black;
 }
 
 @import "nav";
