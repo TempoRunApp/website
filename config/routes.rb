@@ -1,4 +1,4 @@
-AcmMsu::Application.routes.draw do
+TempoRun::Application.routes.draw do
 
   # Pages routing
   # This should be the last thing in the gemfile, to avoid naming conflicts
