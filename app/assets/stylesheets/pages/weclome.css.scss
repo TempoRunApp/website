@@ -1,9 +1,17 @@
 $nav-height: 4em;
+@import "neat";
 
 nav {
-  @include outer-container;
-
+  /* NOTE: I'm note sure this height attribute is being honored...
+  The logo might be throwing it off... */
   height: $nav-height;
+  width: $max-width;
+
+  position: fixed;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
 
   .link {
     @include span-columns(2 of 12);
@@ -19,7 +27,7 @@ nav {
 
 
 section {
-  margin-top: $nav-height;
+  padding-top: 1.5 * $nav-height;
   @include outer-container;
 }
 
