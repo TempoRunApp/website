@@ -218,60 +218,7 @@
   }
 
 /***************** Colors **********************/
-  .grey{
-    background:#638aa8;
-    color:#fff;
-  
-  }
-  .grey h1{
-    color:#fff;
-    text-shadow:0 2px 3px rgba(0,0,0,0.5);
-  }
-  .grey h2{
-    text-shadow:0 1px 2px rgba(0,0,0,0.5);
-  }
-  .grey .subHeading{
-    color:#fff;
-    text-shadow:0 1px 1px rgba(0,0,0,0.5);
-    font-weight:100;
-  }
-  .grey a{color:#fff;}
-  
-  .brown {
-    background: #a99a90 !important;
-    }
-  
-  .brown h1{
-    color:#fff;
-    text-shadow:0 2px 3px #333;
-  }
-  .brown h2{
-    text-shadow:0 2px 3px #333;
-  }
-  .brown .subHeading{
-    color:#fff;
-    text-shadow:0 1px 1px #333;
-    font-weight:100;
-  }
-  .brown a{color:#fff;} 
-  
-  .dark {
-    background: #636b66 !important;
-    }
-  
-  .dark h1{
-    color:#fff;
-    text-shadow:0 2px 3px #333;
-  }
-  .dark h2{
-    text-shadow:0 2px 3px #333;
-  }
-  .dark .subHeading{
-    color:#fff;
-    text-shadow:0 1px 1px #333;
-    font-weight:100;
-  }
-  .dark a{color:#fff;}
+  @import "color_mixins";
 
   .formRow{
     width:100%;
