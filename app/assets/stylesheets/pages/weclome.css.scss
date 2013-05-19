@@ -54,3 +54,13 @@ section {
     @include shift(.5);
   }
 }
+
+#contact-methods {
+  @include row;
+
+  .contact-method {
+    @include span-columns(3 of 12);
+
+    .contact-title { @include clearfix; }
+  }
+}
