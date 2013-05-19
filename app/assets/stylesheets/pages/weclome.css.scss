@@ -8,3 +8,11 @@ section {
     @include omega;
   }
 }
+
+.profile {
+  @include span-columns(4 of 12);
+}
+
+.sponsor {
+  @include span-columns(3 of 12);
+}
