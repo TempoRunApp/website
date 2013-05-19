@@ -1,22 +1,25 @@
-header {
+$nav-height: 4em;
+
+nav {
   @include outer-container;
 
-  img { @include span-columns(4 of 12); }
+  height: $nav-height;
 
-  nav {
-    @include span-columns(4 of 12);
-    @include shift(4);
+  .link {
+    @include span-columns(2 of 12);
+    text-align: right;
 
-    a {
-      @include span-columns(1 of 4);
-      text-align: right;
+    &:first-child {
+      @include span-columns(6 of 12);
+      text-align: left;
     }
   }
+
 }
 
 
 section {
-  margin-bottom: 2em;
+  margin-top: $nav-height;
   @include outer-container;
 }
 
