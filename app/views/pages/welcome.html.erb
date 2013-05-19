@@ -1,33 +1,56 @@
 <%= image_tag "http://placekitten.com/200/200", id: "logo" %>
 
-<h1>acm@msu</h1>
-<span class="byline">Association of Computing Machinery at MSU</span>
+<div id="header">
+  <h1>acm@msu</h1>
+  <span class="byline">Association of Computing Machinery at MSU</span>
 
-<p>acm@msu is a group of awesome computer scientists at Michigan State University.
-We meet every Thursday night to hear great talks, write code, and teach and learn from each other.
-Come join us -- all skill levels are welcome, and we love new faces.
-</p>
+  <p>
+  acm@msu is a group of awesome computer scientists at Michigan State University.
+  We meet every Thursday night to hear great talks, write code, and teach and learn from each other.
+  Come join us &dash; all skill levels are welcome, and we love new faces.
+  </p>
+</div>
 
 <div class="about">
   <h2>Why acm@msu?</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  <p>
+  There's a lot to learn in Computer Science, and some of the most
+  valuable lessons can't be taught in a classroom.
+  </p> <p>
+  We have professionals from some of the best software companies
+  in the country give talks about their experiences. We also host weekly
+  Open Hack sessions where our members share their own projects and ideas.
+  </p> <p>
+  We're all about teaching, learning, and having a good time while doing it.
   </p>
 </div>
 
 <div class="about">
   <h2>How do I join?</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-  nisi ut aliquip ex ea commodo consequat.
+  <p>
+  Our weekly meetings on Thursday nights are open to anyone.
+  </p> <p>
+  Just swing by the Engineering Building (room TBA)
+  at 7pm this Thursday. Grab some pizza and say hello.
+  We'd love to see you there.
+  </p> <p>
+  If you can't make it to a meeting, you can always sign up for
+  our mailing list to keep up-to-date with news and upcoming events.
   </p>
+  <%= link_to "Get the latest updates",
+    "http://lists.cse.msu.edu/cgi-bin/mailman/listinfo/acm-members",
+    class: "button" %>
 </div>
 
 <div class="about">
   <h2>Where can I get help?</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+  <p>
+  If you ever have a question about our events, website, or something else,
+  or if you just want to let us know we're doing a great job, shoot us an email!
+  </p> <p>
+  We love to hear suggestions and feedback, and we're usually pretty quick to answer any questions we get.
+  (No promises during finals week, though).
+  </p> <p>
   </p>
+  <%= mail_to "acm-board@lists.cse.msu.edu", "Get in touch" %>
 </div>

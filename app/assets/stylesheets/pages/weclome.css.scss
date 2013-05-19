@@ -4,6 +4,7 @@ img#logo {
 
 div#header {
   @include span-columns(10 of 12);
+  @include omega;
 }
 
 div.about {
