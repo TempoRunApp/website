@@ -11,8 +11,27 @@ section {
 
 .profile {
   @include span-columns(4 of 12);
+  &:nth-child(3) {
+    @include omega;
+  }
+
+  /* NOTE: You might have to edit this if more
+  people join the team. */
+  &:nth-child(5) {
+    @include shift(2);
+  }
+
+  img {
+    @include span-columns(3 of 4);
+    @include shift(.5);
+  }
 }
 
 .sponsor {
   @include span-columns(3 of 12);
+
+  img {
+    @include span-columns(2 of 3);
+    @include shift(.5);
+  }
 }
