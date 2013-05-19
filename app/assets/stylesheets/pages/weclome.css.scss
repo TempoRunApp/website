@@ -44,14 +44,15 @@ body {
 section {
   .wrapper {
     padding-top: $section-offset;
+    padding-bottom: 0.5 * $section-offset;
     @include outer-container;
   }
 }
 
-#top { background-color: rgb(235,235,235); }
-#aboutus { background-color: #638aa8; }
-#news { background-color: #636b66; }
-#contact { background-color: #a99a90; }
+#top { background-color: $green; }
+#aboutus { background-color: rgb(235,235,235); }
+#news { background-color: rgb(235,235,235); }
+#contact { background-color: rgb(235,235,235); }
 
 #top {
   #video {
