@@ -1,170 +1,162 @@
-<div id="pagewidth">
-  <header id="header">
-    <%= image_tag "logo.png", size: "225x78", alt: "TempoRun Logo" %>
-    <nav id="mainNav">
-      <ul>
-        <li class="active"><a href="#top"><span>Home</span></a></li>
-        <li><a href="#aboutus"><span>About Us</span></a></li>
-        <li><a href="#support"><span>Support</span></a></li>
-        <li><a href="#press"><span>Press</span></a></li>
-        <li><a href="#contactUs"><span>Contact Us</span></a></li>
-      </ul>
-    </nav>
-  </header>
+<header id="header">
+  <%= image_tag "logo.png", size: "225x78", alt: "TempoRun Logo" %>
+  <nav id="mainNav">
+    <ul>
+      <li class="active"><a href="#top"><span>Home</span></a></li>
+      <li><a href="#aboutus"><span>About Us</span></a></li>
+      <li><a href="#support"><span>Support</span></a></li>
+      <li><a href="#press"><span>Press</span></a></li>
+      <li><a href="#contactUs"><span>Contact Us</span></a></li>
+    </ul>
+  </nav>
+</header>
 
-  <section id="top">
-    <h1>Fun &amp; Revolutionary Running Experience</h1>
+<section id="top">
+  <h1>Fun &amp; Revolutionary Running Experience</h1>
 
-    <div id="video" class="vidHolder fullWidth">
-      <iframe src="http://player.vimeo.com/video/60911008?badge=0" width="720" height="405" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  <div id="video" class="vidHolder fullWidth">
+    <iframe src="http://player.vimeo.com/video/60911008?badge=0" width="720" height="405" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+</section>
+
+<section id="aboutus">
+  <div class="center">
+    <h1>About Us &amp; The Team</h1>
+    <strong class="subHeading">The who and what made it happen</strong>
+    <div class="profile">
+      <%= image_tag "joshcircle.png", alt: "Josh Leider" %>
+      <br/><br/>
+      <h4>Josh Leider</h4>
+      <p>Josh is in charge of all marketing efforts regarding TempoRun. He enjoys camping, everything cliché you could possibly think of, and Donald Glover.</p>
+    </div>
+
+    <div class="profile">
+      <%= image_tag "bennycircle.png", alt: "Benny Ebert-Zavos" %>
+      <br/><br/>
+      <h4>Benny Ebert-Zavos</h4>
+      <p>Benny is in charge of everyday operations for TempoRun. He enjoys running, sports (even though he is uncoordinated), health, music, travel and architecture.</p>
+    </div>
+
+    <div class="profile">
+      <%= image_tag "philcircle.png", alt: "Phyllis" %>
+      <br/><br/>
+      <h4>Phil Getzen</h4>
+      <p>Phil is a lead developer, impromptu designer and co-founder of TempoRun. He enjoys science and falling asleep to Carl Sagan. The world is his oyster.</p>
+    </div>
+
+    <div class="profile">
+      <%= image_tag "ryancircle.png", alt: "Ryan Tempas" %>
+      <br/><br/>
+      <h4>Ryan Tempas</h4>
+      <p>Ryan is a developer for TempoRun. Lives by the quote "Whiskey and wild women - No man can live without"</p>
+    </div>
+
+    <div class="profile">
+      <%= image_tag "adamcircle.png", alt: "Adam Proschek" %>
+      <br/><br/>
+      <h4>Adam Proschek</h4>
+      <p>Adam is the co-founder and Vice President of Engineering at TempoRun.</p>
     </div>
   </section>
 
-  <section id="aboutus">
+  <section id="sponsors">
+    <h1 id="support">Support and Awards</h1>
+    <div class="sponsor">
+      <%= image_tag "hatchcircle.png", alt: "The Hatch" %>
+      <h4>The Hatch</h4>
+    </div>
+
+    <div class="sponsor">
+      <%= image_tag "sicircle.png", alt: "Spartan Innovations" %>
+      <h4>Spartan Innovations</h4>
+    </div>
+
+    <div class="sponsor">
+      <%= image_tag "sxswcircle.png", alt: "South by Southwest" %>
+      <h4>1st Place in Student Startup Madness National Pitch Competition</h4>
+    </div>
+
+    <div class="sponsor">
+      <%= image_tag "broadcircle.png", alt: "Broad" %>
+      <h4>1st Place in Broad Pitch Competition</h4>
+    </div>
+  </section>
+
+  <section id="press">
     <div class="center">
-      <h1>About Us &amp; The Team</h1>
-      <strong class="subHeading">The who and what made it happen</strong>
-      <div class="profile">
-        <%= image_tag "joshcircle.png", alt: "Josh Leider" %>
-        <br/><br/>
-        <h4>Josh Leider</h4>
-        <p>Josh is in charge of all marketing efforts regarding TempoRun. He enjoys camping, everything cliché you could possibly think of, and Donald Glover.</p>
-      </div>
+      <h1>News & Updates</h1>
+      <strong class="subHeading">We want you to stay informed</strong>
+      <div id="newsColumnLayout">
+        <a class="twitter-timeline" href="https://twitter.com/TempoRunApp" data-widget-id="309389373173022720">Tweets by @TempoRunApp</a>
 
-      <div class="profile">
-        <%= image_tag "bennycircle.png", alt: "Benny Ebert-Zavos" %>
-        <br/><br/>
-        <h4>Benny Ebert-Zavos</h4>
-        <p>Benny is in charge of everyday operations for TempoRun. He enjoys running, sports (even though he is uncoordinated), health, music, travel and architecture.</p>
-      </div>
-
-      <div class="profile">
-        <%= image_tag "philcircle.png", alt: "Phyllis" %>
-        <br/><br/>
-        <h4>Phil Getzen</h4>
-        <p>Phil is a lead developer, impromptu designer and co-founder of TempoRun. He enjoys science and falling asleep to Carl Sagan. The world is his oyster.</p>
-      </div>
-
-      <div class="profile">
-        <%= image_tag "ryancircle.png", alt: "Ryan Tempas" %>
-        <br/><br/>
-        <h4>Ryan Tempas</h4>
-        <p>Ryan is a developer for TempoRun. Lives by the quote "Whiskey and wild women - No man can live without"</p>
-      </div>
-
-      <div class="profile">
-        <%= image_tag "adamcircle.png", alt: "Adam Proschek" %>
-        <br/><br/>
-        <h4>Adam Proschek</h4>
-        <p>Adam is the co-founder and Vice President of Engineering at TempoRun.</p>
-      </div>
-    </section>
-
-    <section id="sponsors">
-      <h1 id="support">Support and Awards</h1>
-      <div class="sponsor">
-        <%= image_tag "hatchcircle.png", alt: "The Hatch" %>
-        <h4>The Hatch</h4>
-      </div>
-
-      <div class="sponsor">
-        <%= image_tag "sicircle.png", alt: "Spartan Innovations" %>
-        <h4>Spartan Innovations</h4>
-      </div>
-
-      <div class="sponsor">
-        <%= image_tag "sxswcircle.png", alt: "South by Southwest" %>
-        <h4>1st Place in Student Startup Madness National Pitch Competition</h4>
-      </div>
-
-      <div class="sponsor">
-        <%= image_tag "broadcircle.png", alt: "Broad" %>
-        <h4>1st Place in Broad Pitch Competition</h4>
-      </div>
-    </section>
-
-    <section id="press">
-      <div class="center">
-        <h1>News & Updates</h1>
-        <strong class="subHeading">We want you to stay informed</strong>
-        <div id="newsColumnLayout">
-          <a class="twitter-timeline" href="https://twitter.com/TempoRunApp" data-widget-id="309389373173022720">Tweets by @TempoRunApp</a>
-
-        <script>
+      <script>
 !function(d,s,id){
 var js,fjs=d.getElementsByTagName(s)[0];
 if(!d.getElementById(id)) {
-  js=d.createElement(s);
-  js.id=id;
-  js.src="//platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js,fjs);
+js=d.createElement(s);
+js.id=id;
+js.src="//platform.twitter.com/widgets.js";
+fjs.parentNode.insertBefore(js,fjs);
 }
 }(document,"script","twitter-wjs");
-        </script>
+      </script>
 
-        <h2>Announcements</h2>
-        <div id="announcements">
-          <div class="newsFeedPost">
-            <%= image_tag "tempoRunThumbnail.png" %>
-            <a target="_blank" href="http://hospitalitybusiness.broad.msu.edu/2013/02/18/msu-students-earn-spot-in-finals-of-student-startup-madness-tournament/" id="newsFeedText">MSU Students Earn Spot in Finals of Student Startup Madness Tournament</a>
-          </div>
+      <h2>Announcements</h2>
+      <div id="announcements">
+        <div class="newsFeedPost">
+          <%= image_tag "tempoRunThumbnail.png" %>
+          <a target="_blank" href="http://hospitalitybusiness.broad.msu.edu/2013/02/18/msu-students-earn-spot-in-finals-of-student-startup-madness-tournament/" id="newsFeedText">MSU Students Earn Spot in Finals of Student Startup Madness Tournament</a>
+        </div>
 
-          <div class="newsFeedPost">
-            <%= image_tag "fox47.jpg" %>
-            <a target="_blank" href="http://www.fox47news.com/news/wearespartans/187883991.html?lc=Smart" id="newsFeedText">MSU Student Entrepreneurs Are Finalists for National Award</a>
-          </div>
+        <div class="newsFeedPost">
+          <%= image_tag "fox47.jpg" %>
+          <a target="_blank" href="http://www.fox47news.com/news/wearespartans/187883991.html?lc=Smart" id="newsFeedText">MSU Student Entrepreneurs Are Finalists for National Award</a>
+        </div>
 
-          <div class="newsFeedPost">
-            <%= image_tag "detroitJewishNews.gif" %>
-            <a target="_blank" href="http://www.thejewishnews.com/taking-it-on-the-run" id="newsFeedText">MSU Students Hit on Idea for Mobile App to Help Runners.</a>
-          </div>
+        <div class="newsFeedPost">
+          <%= image_tag "detroitJewishNews.gif" %>
+          <a target="_blank" href="http://www.thejewishnews.com/taking-it-on-the-run" id="newsFeedText">MSU Students Hit on Idea for Mobile App to Help Runners.</a>
+        </div>
 
-          <div class="newsFeedPost">
-            <%= image_tag "cbsdetroit.png" %>
-            <a target="_blank" href="http://detroit.cbslocal.com/2013/01/24/ace13-announces-top-six-finalists-in-elevator-pitch-competition/" id="newsFeedText">TempoRun Announced as a Finalist in ACE '13 Competition</a>
-          </div>
+        <div class="newsFeedPost">
+          <%= image_tag "cbsdetroit.png" %>
+          <a target="_blank" href="http://detroit.cbslocal.com/2013/01/24/ace13-announces-top-six-finalists-in-elevator-pitch-competition/" id="newsFeedText">TempoRun Announced as a Finalist in ACE '13 Competition</a>
+        </div>
 
-          <div class="newsFeedPost">
-            <%= image_tag "msuinthenews.png" %>
-            <a target="_blank" href="http://www.supportforstudents.msu.edu/stories/2013/01/15/student-startup-madness-at-sxsw/" id="newsFeedText">TempoRun Mentioned by MSU</a>
-          </div>
+        <div class="newsFeedPost">
+          <%= image_tag "msuinthenews.png" %>
+          <a target="_blank" href="http://www.supportforstudents.msu.edu/stories/2013/01/15/student-startup-madness-at-sxsw/" id="newsFeedText">TempoRun Mentioned by MSU</a>
+        </div>
 
-          <div class="newsFeedPost">
-            <%= image_tag "studentstartupmadness.jpg" %>
-            <a target="_blank" href="http://studentstartupmadness.com/entrepreneurial-eight-finalists-named-will-compete-at-south-by-southwest-in-march/" id="newsFeedText">TempoRun Makes it to the Entrepreneurial 8 in the Student Startup Madness Competiton</a>
-          </div>
+        <div class="newsFeedPost">
+          <%= image_tag "studentstartupmadness.jpg" %>
+          <a target="_blank" href="http://studentstartupmadness.com/entrepreneurial-eight-finalists-named-will-compete-at-south-by-southwest-in-march/" id="newsFeedText">TempoRun Makes it to the Entrepreneurial 8 in the Student Startup Madness Competiton</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="contact">
-    <div class="center">
-      <h1>Contact Us</h1>
-      <strong class="subHeading">We love making new friends</strong>
-      <div class="columns">
-        <div class="half">
-          <h6>Call Us</h6>
-          <h7>517.377.4262</h7><br/><br/><br/>
+<section id="contact">
+  <div class="center">
+    <h1>Contact Us</h1>
+    <strong class="subHeading">We love making new friends</strong>
+    <div class="columns">
+      <div class="half">
+        <h6>Call Us</h6>
+        <h7>517.377.4262</h7><br/><br/><br/>
 
-          <h6>Email Us</h6>
-          <h7><a href="mailto:support@temporunapp.com">support@temporunapp.com</a></h7>
-        </div>
-        <div class="half">
-          <h6>Follow Us</h6>
-          <h7><a href="https://twitter.com/temporunapp">@TempoRunApp</a></h7><br/><br/><br/>
+        <h6>Email Us</h6>
+        <h7><a href="mailto:support@temporunapp.com">support@temporunapp.com</a></h7>
+      </div>
+      <div class="half">
+        <h6>Follow Us</h6>
+        <h7><a href="https://twitter.com/temporunapp">@TempoRunApp</a></h7><br/><br/><br/>
 
-          <h6>Like Us</h6>
-          <h7><a href="https://www.facebook.com/temporunapp">TempoRun App</a></h7>
-        </div>
+        <h6>Like Us</h6>
+        <h7><a href="https://www.facebook.com/temporunapp">TempoRun App</a></h7>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer id="footer">
-    <div class="center">
-      <span class="copy">Created by Hwamok David Park and Chelsea Carr</span>
-      All Copyrights Reserved. TempoRun App 2013
-    </div>
-  </footer>
-</div>
