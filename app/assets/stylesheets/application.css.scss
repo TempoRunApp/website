@@ -3,6 +3,9 @@ NOTE: Uncomment to see a visual representation of the grid-based layout.
 $visual-grid: true;
  */
 
+/* Application's color scheme definition */
+@import "colors";
+
 /* Use mixins provided by Bourbon and Neat */
 @import "bourbon";
 @import "neat";
