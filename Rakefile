@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-AcmMsu::Application.load_tasks
+TempoRun::Application.load_tasks
