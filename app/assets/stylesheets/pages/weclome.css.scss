@@ -1,0 +1,18 @@
+@import "../color_mixins";
+
+section {
+  @include row;
+
+  &#aboutus {
+    @include grey;
+  }
+
+  &#press {
+    @include dark;
+  }
+
+  &#contactUs {
+    @include brown;
+  }
+}
+
