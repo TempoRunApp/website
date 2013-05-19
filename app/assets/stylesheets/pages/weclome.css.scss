@@ -37,11 +37,21 @@ nav {
   }
 }
 
+body {
+  margin: 0;
+}
 
 section {
-  padding-top: $section-offset;
-  @include outer-container;
+  .wrapper {
+    padding-top: $section-offset;
+    @include outer-container;
+  }
 }
+
+#top { background-color: rgb(235,235,235); }
+#aboutus { background-color: #638aa8; }
+#news { background-color: #636b66; }
+#contact { background-color: #a99a90; }
 
 #top {
   #video {
