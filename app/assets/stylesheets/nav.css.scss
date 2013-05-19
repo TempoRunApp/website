@@ -1,0 +1,11 @@
+/* Styles for the navigation bar */
+nav {
+  @include outer-container;
+
+  a {
+    @include span-columns(2 of 12);
+
+    text-decoration: none;
+    color: #000;
+  }
+}

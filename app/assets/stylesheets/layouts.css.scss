@@ -1,0 +1,12 @@
+/* Define styles for app/views/layouts/application.html.erb */
+
+body {
+  margin-top: 0px;
+}
+
+div#wrapper {
+  @include outer-container;
+}
+
+@import "nav";
+

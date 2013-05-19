@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>acm@msu</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<nav>
+  <%= link_to 'ACM@MSU', :root, id: 'home' %>
+  <%= link_to 'People', :root %>
+  <%= link_to 'Events', :root %>
+  <%= link_to 'Join Us', :root %>
+</nav>
+
+<div id="wrapper">
+
+  <%= yield %>
+
+</div>
+
+</body>
+</html>

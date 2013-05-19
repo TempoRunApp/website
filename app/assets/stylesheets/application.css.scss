@@ -1,0 +1,14 @@
+/*
+NOTE: Uncomment to see a visual representation of the grid-based layout.
+$visual-grid: true;
+ */
+
+/* Use mixins provided by Bourbon and Neat */
+@import "bourbon";
+@import "neat";
+
+/* Styles for the layouts defined in app/views/layouts */
+@import "layouts";
+
+/* Styles for static pages*/
+@import "pages/*";

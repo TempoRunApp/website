@@ -1,0 +1,12 @@
+img#logo {
+  @include span-columns(2 of 12);
+}
+
+div#header {
+  @include span-columns(10 of 12);
+  @include omega;
+}
+
+div.about {
+  @include span-columns(4 of 12);
+}
