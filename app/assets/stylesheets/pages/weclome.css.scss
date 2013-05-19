@@ -1,13 +1,13 @@
 @import "neat";
 
-$nav-height: 4em;
-$section-offset: $nav-height + 2 * $gutter;
+$nav-height: 2 * $gutter;
+$section-offset: 4 * $gutter;
 
 @import "colors";
 
 nav {
   background-color: $green;
-  @include pad(0.5*$gutter $gutter);
+  padding: 0.5*$gutter $gutter;
 
   img { height: $nav-height; }
 
@@ -22,12 +22,19 @@ nav {
     @include span-columns(2 of 12);
     text-align: right;
 
+    a {
+      font-size: 2em;
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    /* The logo */
     &:first-child {
       @include span-columns(6 of 12);
       text-align: left;
+      a { font-size: 1em; }
     }
   }
-
 }
 
 
