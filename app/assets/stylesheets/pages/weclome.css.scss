@@ -1,18 +1,10 @@
-@import "../color_mixins";
-
 section {
-  @include row;
-
-  &#aboutus {
-    @include grey;
-  }
-
-  &#press {
-    @include dark;
-  }
-
-  &#contactUs {
-    @include brown;
-  }
+  @include outer-container;
 }
 
+#top {
+  #video {
+    @include span-columns(12 of 12);
+    @include omega;
+  }
+}
