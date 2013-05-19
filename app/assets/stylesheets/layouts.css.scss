@@ -4,9 +4,4 @@ body {
   margin-top: 0px;
 }
 
-div#wrapper {
-  @include outer-container;
-}
-
 @import "nav";
-

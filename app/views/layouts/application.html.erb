@@ -6,18 +6,11 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
-<nav>
-  <%= link_to 'TempoRun', :root, id: 'home' %>
-  <%= link_to 'The Science', :root %>
-</nav>
+<%# TODO make this javascript call unobtrusive %>
+<body onload="initialize()">
 
-<div id="wrapper">
-
-  <%= yield %>
-
-</div>
+<%= yield %>
 
 </body>
 </html>
