@@ -17,7 +17,7 @@ nav {
   left: 0;
 
   .link {
-    @include span-columns(2 of 12);
+    @include span-columns(1 of 12);
     height: $nav-height;
     position: relative;
 
@@ -26,14 +26,14 @@ nav {
       bottom: 0;
       right: 0;
       font-family: $light;
-      font-size: 2em;
+      font-size: 1.5em;
       text-decoration: none;
       color: #FFF;
     }
 
     /* The logo */
     &:first-child {
-      @include span-columns(6 of 12);
+      @include span-columns(8 of 12);
       text-align: left;
       a {
         right: auto; /* Float to left */

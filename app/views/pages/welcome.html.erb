@@ -1,6 +1,7 @@
 <nav id="nav">
   <span class="link"><a href="#top"><%= image_tag "logo.png", alt: "TempoRun Logo" %></a></span>
-  <span class="link"><a href="#aboutus">About Us</a></span>
+  <span class="link"><a href="#what-is">About</a></span>
+  <span class="link"><a href="#aboutus">Team</a></span>
   <span class="link"><a href="#news">News</a></span>
   <span class="link"><a href="#contact">Contact</a></span>
 </nav>
@@ -19,6 +20,44 @@
     <%= link_to "https://itunes.apple.com/us/app/temporun/id643120489?ls=1&mt=8" do %>
       <%= image_tag "app_store.png", alt: "Available on the App store" %>
     <% end %>
+  </div>
+</div>
+</section>
+
+<section id="what-is" class="section">
+<div class="wrapper">
+  <div class="section-header">
+    <h1>What is TempoRun?</h1>
+    <span class="byline">Meet your new training partner</span>
+  </div>
+
+  <div id="bullets">
+    <div class="bullet">
+      <div class="title">Sort Your Songs by Tempo</div>
+      <%= image_tag "Screen_4_i5.png", alt: "Calculate Tempo" %>
+      <p>
+      Tempo Run will automatically calculate a tempo for each of your songs,
+      or you can tap along to set a beat yourself.
+      </p>
+    </div>
+
+    <div class="bullet">
+      <div class="title">Listen to Music Perfectly Timed to your Run</div>
+      <%= image_tag "Screen_5_i5.png", alt: "Run Control Panel" %>
+      <p>
+      On your run, easily manage your songs and speed.
+      The interface is clean and easy to use, so you can
+      get in, get out, and get back to your run.
+      </p>
+    </div>
+
+    <div class="bullet">
+      <div class="title">Keep Track of your Stats, and Improve Your Runs</div>
+      <%= image_tag "Screen_3_i5.png", alt: "Dashboard" %>
+      <p>
+      Get an at-a-glance view of your progress, and keep track of your training history.
+      </p>
+    </div>
   </div>
 </div>
 </section>
@@ -84,26 +123,26 @@
   </div>
 
   <div id="contact-methods">
-    <div class="contact-method">
+    <div id="phone" class="contact-method">
       <%= image_tag "phone.svg", alt: "phone" %>
       <span class="contact-title">Call Us</span>
       <span class="contact-info">517.377.4262</span>
     </div>
 
-    <div class="contact-method">
+    <div id="email" class="contact-method">
       <%= image_tag "email.svg", alt: "email" %>
       <span class="contact-title">Email Us</span>
       <span class="contact-info"><a href="mailto:support@temporunapp.com">support @temporunapp.com</a></span>
     </div>
 
-    <div class="contact-method">
-      <%= image_tag "facebook.svg", alt: "facebook" %>
+    <div id="twitter" class="contact-method">
+      <%= image_tag "twitter.svg", alt: "twitter" %>
       <span class="contact-title">Follow Us</span>
       <span class="contact-info"><a href="https://twitter.com/temporunapp">@TempoRunApp</a></span>
     </div>
 
-    <div class="contact-method">
-      <%= image_tag "twitter.svg", alt: "twitter" %>
+    <div id="facebook" class="contact-method">
+      <%= image_tag "facebook.svg", alt: "facebook" %>
       <span class="contact-title">Like Us</span>
       <span class="contact-info"><a href="https://www.facebook.com/temporunapp">TempoRun App</a></span>
   </div>
