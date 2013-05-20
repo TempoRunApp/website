@@ -1,0 +1,65 @@
+@import "neat";
+
+#reviews {
+  background: image_url("review_background.png") no-repeat center center fixed;
+  background-size: cover;
+
+  .section-header .byline {
+  }
+}
+
+#testimonials {
+  @include span-columns(5 of 12);
+
+  .testimonial {
+    @include fill-parent;
+
+    /* Put each testimonial on a white "Card" */
+    background-color: #FFF;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px -2px #000;
+    padding: $gutter 2 * $gutter;
+
+    position: relative;
+
+    margin-bottom: $gutter;
+
+    blockquote {
+      font-family: $paragraph;
+      margin: 0px;
+    }
+    .source {
+      font-family: $light;
+      text-align: right;
+    }
+  }
+}
+
+/*
+      @include span-columns(4 of 12);
+
+      div.title {
+        display: block;
+        min-height: 3em;
+        font-family: $light;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      img {
+        border: 2px solid $grey;
+        border-radius: 4px;
+
+        max-width: 100%;
+
+        margin-bottom: $gutter;
+      }
+
+      p {
+        font-size: 1.2em;
+        min-height: 6em;
+      }
+    }
+  }
+}
+*/
