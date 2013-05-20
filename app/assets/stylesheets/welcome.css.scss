@@ -26,13 +26,6 @@ p {
 #news { background-color: $grey; }
 #contact { background-color: $grey; }
 
-#top {
-  #video {
-    @include span-columns(8 of 12);
-    @include shift(2);
-    @include omega;
-  }
-}
-
+@import "top";
 @import "aboutus";
 @import "contact";
