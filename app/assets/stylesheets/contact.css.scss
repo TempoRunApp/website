@@ -16,6 +16,17 @@
     padding: $gutter;
     text-align: center;
 
-    .contact-title { @include clearfix; }
+    .contact-title {
+      font-family: $light;
+      font-size: 2em;
+      @include clearfix;
+    }
+
+    .contact-info {
+      display: block;
+      font-family: $paragraph;
+      font-size: 1.2em;
+      height: 3em;
+    }
   }
 }
