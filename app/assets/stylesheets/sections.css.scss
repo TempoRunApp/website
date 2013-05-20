@@ -1,0 +1,27 @@
+@import "neat";
+
+$section-offset: 4 * $gutter;
+
+section {
+  position: relative;
+  .wrapper {
+    z-index: inherit;
+    position: relative;
+    padding-top: $section-offset;
+    padding-bottom: 0.5 * $section-offset;
+    @include outer-container;
+    border-bottom: 1px solid #CCC;
+    box-shadow: 0 160px 200px -240px #000;
+
+    .section-header {
+      z-index: inherit;
+      text-align: center;
+      margin-bottom: $gutter;
+    }
+  }
+}
+
+span.byline {
+  font-family: $light;
+  font-size: 2em;
+}

@@ -5,10 +5,6 @@ $visual-grid-index: front;
 $visual-grid-color: #CCC;
  */
 
-
-/* Application's color scheme definition */
-@import "colors";
-
 /* Use mixins provided by Bourbon and Neat */
 @import "bourbon";
 @import "neat";
