@@ -70,21 +70,17 @@ section {
   }
 }
 
-.profile {
-  @include span-columns(4 of 12);
-  &:nth-child(3n+1) {
-    @include omega;
-  }
+#profiles {
+  @include span-columns(10 of 12);
+  @include shift(1);
 
-  /* NOTE: You might have to edit this if more
-  people join the team. */
-  &:nth-child(5) {
-    @include shift(2);
-  }
+  .profile {
+    @include span-columns(2 of 10);
 
-  img {
-    @include span-columns(3 of 4);
-    @include shift(.5);
+    img {
+      @include span-columns(1.5 of 2);
+      @include shift(.25);
+    }
   }
 }
 
