@@ -1,0 +1,23 @@
+@import "neat";
+
+#what-is {
+  div.section-header {
+    h1 {}
+    span.byline {}
+  }
+
+  div#bullets {
+    div.bullet {
+      @include span-columns(4 of 12);
+      img { @include fill-parent; }
+      div.title {
+        display: block;
+        height: 3em;
+        font-family: $light;
+        font-size: 1.5em;
+        text-align: center;
+      }
+      p { font-size: 1.2em;}
+    }
+  }
+}

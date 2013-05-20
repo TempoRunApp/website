@@ -22,10 +22,12 @@ p {
   background-color: $green;
   h1 { color: $grey; }
 }
+#what-is { background-color: $grey; }
 #aboutus { background-color: $grey; }
 #news { background-color: $grey; }
 #contact { background-color: $grey; }
 
 @import "top";
+@import "what_is";
 @import "aboutus";
 @import "contact";
