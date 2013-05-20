@@ -1,0 +1,5 @@
+
+#news-container {
+  @include span-columns(6 of 12);
+  @include shift(3);
+}
