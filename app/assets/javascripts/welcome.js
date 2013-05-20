@@ -22,13 +22,3 @@ $(document).ready(function() {
     fjs.parentNode.insertBefore(js,fjs);
   }
 });
-
-
-/* In order for box shadows on each section to work properly,
- * the sections need to be placed in descending z-index order. */
-$(document).ready(function() {
-  $('.section').each(function(index) {
-    zindex = index * -1;
-    $(this).css('zIndex', zindex);
-  });
-});
