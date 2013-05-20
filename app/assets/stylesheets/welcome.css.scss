@@ -76,6 +76,11 @@ h1 {
   margin: 0px;
 }
 
+p {
+  z-index: inherit;
+  font-family: $paragraph;
+}
+
 span.byline {
   font-family: $light;
   font-size: 2em;
