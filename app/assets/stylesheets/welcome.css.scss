@@ -53,11 +53,23 @@ section {
     border-bottom: 1px solid #CCC;
     box-shadow: 0 160px 200px -240px #000;
 
-    .section-header { z-index: inherit; }
+    .section-header {
+      z-index: inherit;
+      text-align: center;
+    }
   }
 }
 
-#top { background-color: $green; }
+h1 {
+  font-size: 4em;
+  color: $green;
+  margin: 0px;
+}
+
+#top {
+  background-color: $green;
+  h1 { color: $grey; }
+}
 #aboutus { background-color: $grey; }
 #news { background-color: $grey; }
 #contact { background-color: $grey; }
