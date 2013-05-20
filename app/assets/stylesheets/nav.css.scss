@@ -5,6 +5,7 @@
 $nav-height: 2 * $gutter;
 
 nav {
+  z-index: 1;
   background-color: $green;
   padding: 0.5*$gutter $gutter;
 
