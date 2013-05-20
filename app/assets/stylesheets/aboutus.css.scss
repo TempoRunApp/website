@@ -1,0 +1,20 @@
+#profiles {
+  @include span-columns(10 of 12);
+  @include shift(1);
+
+  .profile {
+    @include span-columns(2 of 10);
+
+    img {
+      @include span-columns(1.5 of 2);
+      @include shift(.25);
+      margin-bottom: $gutter;
+    }
+
+    .name {
+      font-family: $light;
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+}

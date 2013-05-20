@@ -1,0 +1,49 @@
+@import "neat";
+@import "fonts";
+@import "colors";
+
+$nav-height: 2 * $gutter;
+
+nav {
+  z-index: 1;
+  background-color: $green;
+  padding: 0.5*$gutter $gutter;
+
+  position: fixed;
+  width: $max-width + 2 * $gutter;
+  margin: auto;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  .link {
+    @include span-columns(2 of 12);
+    height: $nav-height;
+    position: relative;
+
+    a {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      font-family: $light;
+      font-size: 2em;
+      text-decoration: none;
+      color: #FFF;
+    }
+
+    /* The logo */
+    &:first-child {
+      @include span-columns(6 of 12);
+      text-align: left;
+      a {
+        right: auto; /* Float to left */
+        font-size: 1em;
+      }
+      img { height: $nav-height; }
+    }
+  }
+
+  &.mid-page {
+    box-shadow: 0px 0px 6px -2px #000;
+  }
+}
