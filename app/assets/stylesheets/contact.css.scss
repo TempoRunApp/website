@@ -2,8 +2,31 @@
   @include row;
 
   .contact-method {
+    background-color: $green;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px -2px #000;
     @include span-columns(3 of 12);
 
-    .contact-title { @include clearfix; }
+    img {
+      $width: 3 * $column;
+      height: $width;
+      padding-bottom: $gutter;
+    }
+
+    padding: $gutter;
+    text-align: center;
+
+    .contact-title {
+      font-family: $light;
+      font-size: 2em;
+      @include clearfix;
+    }
+
+    .contact-info {
+      display: block;
+      font-family: $paragraph;
+      font-size: 1.2em;
+      height: 3em;
+    }
   }
 }

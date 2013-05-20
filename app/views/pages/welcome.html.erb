@@ -14,6 +14,12 @@
   <div id="video" class="vidHolder fullWidth">
     <iframe src="http://player.vimeo.com/video/60911008?badge=0&portrait=0&title=0&byline=0" width="720" height="405" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
+
+  <div class="app-store-badge">
+    <%= link_to "https://itunes.apple.com/us/app/temporun/id643120489?ls=1&mt=8" do %>
+      <%= image_tag "app_store.png", alt: "Available on the App store" %>
+    <% end %>
+  </div>
 </div>
 </section>
 
@@ -21,7 +27,7 @@
 <div class="wrapper">
   <div class="section-header">
     <h1>About Us</h1>
-    <span class="byline"> The who and what made it happen</span>
+    <span class="byline">The who and what made it happen</span>
   </div>
 
   <div id="profiles">
@@ -79,21 +85,25 @@
 
   <div id="contact-methods">
     <div class="contact-method">
+      <%= image_tag "phone.svg", alt: "phone" %>
       <span class="contact-title">Call Us</span>
       <span class="contact-info">517.377.4262</span>
     </div>
 
     <div class="contact-method">
+      <%= image_tag "email.svg", alt: "email" %>
       <span class="contact-title">Email Us</span>
-      <span class="contact-info"><a href="mailto:support@temporunapp.com">support@temporunapp.com</a></span>
+      <span class="contact-info"><a href="mailto:support@temporunapp.com">support @temporunapp.com</a></span>
     </div>
 
     <div class="contact-method">
+      <%= image_tag "facebook.svg", alt: "facebook" %>
       <span class="contact-title">Follow Us</span>
       <span class="contact-info"><a href="https://twitter.com/temporunapp">@TempoRunApp</a></span>
     </div>
 
     <div class="contact-method">
+      <%= image_tag "twitter.svg", alt: "twitter" %>
       <span class="contact-title">Like Us</span>
       <span class="contact-info"><a href="https://www.facebook.com/temporunapp">TempoRun App</a></span>
   </div>
