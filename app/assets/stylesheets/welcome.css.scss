@@ -107,6 +107,13 @@ span.byline {
     img {
       @include span-columns(1.5 of 2);
       @include shift(.25);
+      margin-bottom: $gutter;
+    }
+
+    .name {
+      font-family: $light;
+      font-size: 1.2em;
+      text-align: center;
     }
   }
 }
