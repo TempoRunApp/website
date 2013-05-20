@@ -7,11 +7,14 @@
     box-shadow: 2px 2px 12px -2px #000;
     @include span-columns(3 of 12);
 
+    img {
+      $width: 3 * $column;
+      height: $width;
+      padding-bottom: $gutter;
+    }
+
     padding: $gutter;
     text-align: center;
-
-    $width: 3 * $column + 2 * $gutter;
-    height: golden_ratio($width, 1);
 
     .contact-title { @include clearfix; }
   }
