@@ -22,3 +22,20 @@ $(document).ready(function() {
     fjs.parentNode.insertBefore(js,fjs);
   }
 });
+
+/* Testimonials background image parallax */
+$(document).ready(function() {
+  var min = $('#reviews').offset().top - $('#reviews').height();
+  var max = $('#reviews').offset().top + $('#reviews').height() + $(window).height();
+  var imgHeight = 853;
+  $('#reviews').scrollspy({
+    min: min,
+    max: max,
+    onTick: function(element, position) {
+      var percentage = (position.top - min) / (max - min);
+      console.log(percentage);
+      var range = $('#reviews').height() - imgHeight;
+      $("#reviews").css('background-position', "0 " + ( percentage * range) + "px");
+    },
+  });
+});
