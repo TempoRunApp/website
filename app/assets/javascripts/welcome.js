@@ -25,15 +25,18 @@ $(document).ready(function() {
 
 /* Testimonials background image parallax */
 $(document).ready(function() {
-  var min = $('#reviews').offset().top - $('#reviews').height();
-  var max = $('#reviews').offset().top + $('#reviews').height() + $(window).height();
   var imgHeight = 853;
+  /* The event is triggered based on the number of pixels that have
+   * scrolled off the top of the screen. We use functions so that it
+   * stays accurate even if the screen size changes or elements move
+   * around */
+  var min = function() { return $('#reviews').offset().top - $(window).height(); }
+  var max = function() { return $('#reviews').offset().top + $('#reviews').height(); }
   $('#reviews').scrollspy({
     min: min,
     max: max,
     onTick: function(element, position) {
-      var percentage = (position.top - min) / (max - min);
-      console.log(percentage);
+      var percentage = (position.top - min()) / (max() - min());
       var range = $('#reviews').height() - imgHeight;
       $("#reviews").css('background-position', "0 " + ( percentage * range) + "px");
     },
