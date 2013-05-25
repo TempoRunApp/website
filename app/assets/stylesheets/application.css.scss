@@ -12,5 +12,6 @@ $visual-grid-color: #CCC;
 /* Styles for the layouts defined in app/views/layouts */
 @import "layouts";
 
-/* Styles for home page*/
+/* Styles for pages */
 @import "welcome";
+@import "science";

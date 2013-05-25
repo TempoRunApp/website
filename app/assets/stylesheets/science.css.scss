@@ -1,0 +1,8 @@
+@import "neat";
+
+#science #article {
+  @include span-columns(10 of 12);
+  @include shift(1);
+
+  font-size: 1.2em;
+}
