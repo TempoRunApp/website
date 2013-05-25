@@ -39,4 +39,11 @@
       }
     }
   }
+
+  div#science-link {
+    @include span-columns(4 of 12);
+    @include shift(4);
+
+    margin-top: $gutter;
+  }
 }
