@@ -1,3 +1,5 @@
+<%# Override default navigation bar %>
+<%= content_for :nav do %>
 <nav id="nav">
   <span class="link"><a href="#top"><%= image_tag "logo.png", alt: "TempoRun Logo" %></a></span>
   <span class="link"><a href="#what-is">About</a></span>
@@ -6,6 +8,7 @@
   <span class="link"><a href="#news">News</a></span>
   <span class="link"><a href="#contact">Contact</a></span>
 </nav>
+<% end %>
 
 <section id="top">
 <div class="wrapper">

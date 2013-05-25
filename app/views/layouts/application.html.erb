@@ -10,6 +10,16 @@
 
 <body>
 
+<% if content_for? :nav %>
+  <%= yield :nav %>
+<% else %>
+  <nav id="nav">
+    <span class="link">
+      <%= link_to(:root) { image_tag "logo.png", alt: "TempoRun Logo" } %>
+    </span>
+  </nav>
+<% end %>
+
 <%= yield %>
 
 
