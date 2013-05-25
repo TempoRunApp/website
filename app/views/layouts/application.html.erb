@@ -13,10 +13,12 @@
 <% if content_for? :nav %>
   <%= yield :nav %>
 <% else %>
-  <nav id="nav">
+  <nav id="main-nav">
     <span class="link">
       <%= link_to(:root) { image_tag "logo.png", alt: "TempoRun Logo" } %>
     </span>
+    <span class="link"><%= link_to "Home", :root %></span>
+    <span class="link"><%= link_to "Science", "/science" %></span>
   </nav>
 <% end %>
 

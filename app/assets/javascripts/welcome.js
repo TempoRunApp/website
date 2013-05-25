@@ -1,11 +1,11 @@
 $(document).ready(function() {
-  $('#nav').scrollspy({
-    min: $('#nav').offset().top + 10,
+  $('#welcome-nav').scrollspy({
+    min: $('#welcome-nav').offset().top + 10,
     onEnter: function(element, position) {
-      $("#nav").addClass('mid-page');
+      $("#welcome-nav").addClass('mid-page');
     },
     onLeave: function(element, position) {
-      $("#nav").removeClass('mid-page');
+      $("#welcome-nav").removeClass('mid-page');
     }
   });
 });
