@@ -8,6 +8,16 @@
 }
 
 .app-store-badge img {
+  @include media($large) {
     @include span-columns(4 of 12);
     @include shift(4);
+  }
+  @include media($tablet) {
+    @include span-columns(4 of 8);
+    @include shift(2);
+  }
+  @include media($mobile) {
+    @include span-columns(2 of 4);
+    @include shift(1);
+  }
 }

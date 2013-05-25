@@ -1,16 +1,28 @@
 @import "neat";
 
 #reviews {
-  background: image_url("review_background.png") no-repeat center center fixed;
-  background-size: cover;
+  @include media($large) {
+    background: image_url("review_background.png") no-repeat center center fixed;
+    background-size: cover;
 
-  .section-header .byline {
-      color: $grey;
+    .section-header .byline {
+        color: $grey;
+    }
   }
 }
 
 #testimonials {
-  @include span-columns(5 of 12);
+  @include media($large) {
+    @include span-columns(5 of 12);
+  }
+  @include media($tablet) {
+    @include span-columns(6 of 8);
+    @include shift(1);
+    @incldue omega;
+  }
+  @include media($mobile) {
+    @include span-columns(4 of 4);
+  }
 
   .testimonial {
     @include fill-parent;

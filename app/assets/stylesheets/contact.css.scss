@@ -5,10 +5,21 @@
     background-color: $green;
     border-radius: 4px;
     box-shadow: 2px 2px 12px -2px #000;
-    @include span-columns(3 of 12);
+    margin-bottom: $gutter;
+
+    @include media($large) {
+      @include span-columns(3 of 12);
+    }
+    @include media($tablet) {
+      @include span-columns(4 of 8);
+      &:nth-child(2n) { @include omega; }
+    }
+    @include media($mobile) {
+      @include span-columns(2 of 4);
+      &:nth-child(2n) { @include omega; }
+    }
 
     img {
-      /* TODO work on the responsiveness */
       $width: 3 * $column;
       max-height: $width;
       height: $width;

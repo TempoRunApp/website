@@ -1,20 +1,30 @@
 @import "neat";
 
 #what-is {
-  div.section-header {
-    h1 {}
-    span.byline {}
-  }
-
-  div#bullets {
+ div#bullets {
     div.bullet {
       /* Put each bullet on a white "Card" */
       background-color: #FFF;
       border-radius: 4px;
       box-shadow: 2px 2px 12px -2px #000;
       @include pad;
+      margin-bottom: $gutter;
 
-      @include span-columns(4 of 12);
+      @include media($large) {
+        @include span-columns(4 of 12);
+      }
+      @include media($tablet) {
+        @include span-columns(4 of 8);
+        &:nth-child(2) { @include omega; }
+        &:nth-child(3) { @include shift(2); }
+      }
+      @include media($mobile) {
+        @include span-columns(4 of 4);
+        img {
+          @include span-columns(3 of 4);
+          @include shift(.5);
+        }
+      }
 
       div.title {
         display: block;
@@ -29,7 +39,6 @@
         border-radius: 4px;
 
         max-width: 100%;
-
         margin-bottom: $gutter;
       }
 
