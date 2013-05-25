@@ -14,8 +14,8 @@ $(document).ready(function() {
 /* Video Aspect Ratio */
 jQuery(function() {
   function setAspectRatio() {
-    jQuery('iframe').each(function() {
-      jQuery(this).css('height',jQuery(this).width()*9/16);
+    $('iframe#vimeo').each(function() {
+      $(this).css('height',jQuery(this).width()*9/16);
     });
   }
 
