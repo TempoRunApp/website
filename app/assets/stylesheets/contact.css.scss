@@ -1,6 +1,6 @@
-#contact-methods {
-  @include row;
+@import "colors";
 
+#contact-methods {
   .contact-method {
     background-color: $green;
     border-radius: 4px;
