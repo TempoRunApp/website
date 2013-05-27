@@ -31,7 +31,10 @@
     background-color: #FFF;
     border-radius: 4px;
     box-shadow: 2px 2px 12px -2px #000;
-    padding: $gutter 2 * $gutter;
+    padding: $gutter;
+    @include media($large) {
+      padding: $gutter 2 * $gutter;
+    }
 
     position: relative;
 
