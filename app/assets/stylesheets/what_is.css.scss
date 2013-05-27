@@ -40,8 +40,16 @@
       }
 
       p {
-        font-size: 1.2em;
         min-height: 6em;
+        @include media($large) {
+        font-size: 1.2em;
+        }
+        @include media($tablet) {
+        font-size: 1.2em;
+        }
+        @include media($mobile) {
+          font-size: 1em;
+        }
       }
     }
   }

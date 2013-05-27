@@ -7,9 +7,30 @@
 
 h1 {
   font-family: $medium;
-  font-size: 4em;
   color: $green;
   margin: 0px;
+  @include media($large) {
+    font-size: 4em;
+  }
+  @include media($tablet) {
+    font-size: 4em;
+  }
+  @include media($mobile) {
+    font-size: 2em;
+  }
+}
+
+span.byline {
+  font-family: $light;
+  @include media($large) {
+    font-size: 2em;
+  }
+  @include media($tablet) {
+    font-size: 2em;
+  }
+  @include media($mobile) {
+    font-size: 1.5em;
+  }
 }
 
 p {
