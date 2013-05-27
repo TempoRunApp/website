@@ -7,26 +7,6 @@
     box-shadow: 2px 2px 12px -2px #000;
     margin-bottom: $gutter;
 
-    @include media($large) {
-      @include span-columns(3 of 12);
-    }
-    @include media($tablet) {
-      @include span-columns(4 of 8);
-      &:nth-child(2n) { @include omega; }
-    }
-    @include media($mobile) {
-      @include span-columns(2 of 4);
-      &:nth-child(2n) { @include omega; }
-    }
-
-    img {
-      $width: 3 * $column;
-      max-height: $width;
-      height: $width;
-      width: 100%;
-      padding-bottom: $gutter;
-    }
-
     padding: $gutter;
     text-align: center;
 
@@ -44,6 +24,33 @@
 
       color: $grey;
       a { color: $grey; }
+    }
+
+    @include media($large) {
+      @include span-columns(3 of 12);
+
+      img {
+        $width: 3 * $column;
+        max-height: $width;
+        height: $width;
+        width: 100%;
+        padding-bottom: $gutter;
+      }
+    }
+    @include media($tablet) {
+      @include span-columns(4 of 8);
+      &:nth-child(2n) { @include omega; }
+    }
+    @include media($mobile) {
+      img {
+        max-height: 2em;
+        max-width: 2em;
+      }
+      @include span-columns(2 of 4);
+      &:nth-child(2n) { @include omega; }
+      .contact-title { font-size: .8em; }
+      .contact-info { display: none; }
+      min-height: 8em;
     }
   }
 }
