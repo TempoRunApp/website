@@ -1,5 +1,11 @@
 #profiles {
   .profile {
+    img {
+      @include span-columns(3 of 4);
+      @include shift(.5);
+      margin-bottom: $gutter;
+    }
+
     @include media($large) {
       @include span-columns(4 of 12);
       &:nth-child(3n) { @include omega; }
@@ -11,18 +17,16 @@
       &:nth-child(4) { @include shift(2); }
     }
     @include media($mobile) {
-      @include span-columns(2);
-      &:nth-child(2n) { @include omega; }
-      &:last-child { @include shift(1); }
+      @include span-columns(4);
+      img {
+        @include span-columns(2 of 4);
+        @include shift(1);
+        margin-right: 25%;
+      }
+      padding: 0 $gutter;
     }
 
     margin-bottom: $gutter;
-
-    img {
-      @include span-columns(3 of 4);
-      @include shift(.5);
-      margin-bottom: $gutter;
-    }
 
     .name {
       font-family: $light;
