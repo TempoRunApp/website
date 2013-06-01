@@ -1,18 +1,11 @@
 @import "neat";
+@import "tile";
 
 #what-is {
-  div.section-header {
-    h1 {}
-    span.byline {}
-  }
-
   div#bullets {
     div.bullet {
-      /* Put each bullet on a white "Card" */
-      background-color: #FFF;
-      border-radius: 4px;
-      box-shadow: 2px 2px 12px -2px #000;
-      @include pad;
+      /* Put each bullet on a white "Tile" */
+      @include tile;
 
       @include span-columns(4 of 12);
 
