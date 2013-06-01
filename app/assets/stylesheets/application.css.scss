@@ -7,6 +7,7 @@ $visual-grid-color: #CCC;
 
 /* Use mixins provided by Bourbon and Neat */
 @import "bourbon";
+@import "grid_settings";
 @import "neat";
 
 /* Styles for the layouts defined in app/views/layouts */

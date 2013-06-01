@@ -5,6 +5,8 @@
   @include shift(2);
   @include omega;
   margin-bottom: $gutter;
+
+  iframe { @include fill-parent; }
 }
 
 .app-store-badge img {
