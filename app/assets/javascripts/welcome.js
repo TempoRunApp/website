@@ -1,5 +1,5 @@
 /* Navigation Bar */
-$(document).ready(function() {
+$(document).on('page:load', function() {
   $('#welcome-nav').scrollspy({
     min: $('#welcome-nav').offset().top + 10,
     onEnter: function(element, position) {
@@ -12,7 +12,7 @@ $(document).ready(function() {
 });
 
 /* Video Aspect Ratio */
-jQuery(function() {
+$(document).on('page:load', function() {
   function setAspectRatio() {
     $('iframe#vimeo').each(function() {
       $(this).css('height',jQuery(this).width()*9/16);
@@ -24,7 +24,7 @@ jQuery(function() {
 });
 
 /* Twitter Feed */
-$(document).ready(function() {
+$(document).on('page:load', function() {
   var d = document
   var s = "script"
   var id= "twitter-wjs"
@@ -38,7 +38,7 @@ $(document).ready(function() {
 });
 
 /* Testimonials background image parallax */
-$(document).ready(function() {
+$(document).on('page:load', function() {
   var imgHeight = 853;
   /* The event is triggered based on the number of pixels that have
    * scrolled off the top of the screen. We use functions so that it
