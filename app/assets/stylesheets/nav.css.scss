@@ -4,7 +4,7 @@
 
 $nav-height: 2 * $gutter;
 
-nav#welcome-nav {
+nav {
   z-index: 1;
   background-color: $green;
   padding: 0.5*$gutter $gutter;
@@ -40,8 +40,14 @@ nav#welcome-nav {
       }
       img { height: $nav-height; }
     }
-  }
 
+  }
+}
+
+nav#main-nav {
+  box-shadow: 0px 0px 6px -2px #000;
+}
+nav#welcome-nav {
   &.mid-page {
     box-shadow: 0px 0px 6px -2px #000;
   }
