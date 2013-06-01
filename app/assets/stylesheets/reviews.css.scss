@@ -1,16 +1,29 @@
 @import "neat";
 
 #reviews {
-  background: image_url("review_background.png") no-repeat center center fixed;
-  background-size: cover;
+  @include media($large) {
+    background: image_url("review_background.png") no-repeat center center fixed;
+    background-size: cover;
 
-  .section-header .byline {
-      color: $grey;
+    .section-header .byline {
+        color: $grey;
+        text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    }
   }
 }
 
 #testimonials {
-  @include span-columns(5 of 12);
+  @include span-columns(6 of 12);
+  @include shift(3);
+
+  /* Left align to get out of the way of the background iPhone image */
+  @include media($large) {
+    @include shift(0);
+  }
 
   .testimonial {
     @include fill-parent;
