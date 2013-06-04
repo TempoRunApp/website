@@ -3,3 +3,21 @@
   @include span-columns(6 of 12);
   @include shift(3);
 }
+
+#news {
+  text-align: center;
+  a#follow {
+    margin-top: $gutter;
+    @include tile;
+    display: inline-block;
+    border-radius: $gutter;
+
+    background-color: $green;
+    color: $grey;
+
+    font-family: $paragraph;
+    text-decoration: none;
+    font-size: 2em;
+    &:hover { box-shadow: none; }
+  }
+}
