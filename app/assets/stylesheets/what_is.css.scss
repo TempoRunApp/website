@@ -1,0 +1,42 @@
+@import "neat";
+@import "tile";
+
+#what-is {
+  div#bullets {
+    div.bullet {
+      /* Put each bullet on a white "Tile" */
+      @include tile;
+
+      @include span-columns(4 of 12);
+
+      div.title {
+        display: block;
+        min-height: 3em;
+        font-family: $light;
+        font-size: 1.5em;
+        text-align: center;
+      }
+
+      img {
+        border: 2px solid $grey;
+        border-radius: 4px;
+
+        max-width: 100%;
+
+        margin-bottom: $gutter;
+      }
+
+      p {
+        font-size: 1.2em;
+        min-height: 6em;
+      }
+    }
+  }
+
+  div#science-link {
+    @include span-columns(4 of 12);
+    @include shift(4);
+
+    margin-top: $gutter;
+  }
+}

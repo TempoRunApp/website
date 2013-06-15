@@ -1,0 +1,38 @@
+#contact-methods {
+  @include row;
+
+  .contact-method {
+    background-color: $green;
+    border-radius: 4px;
+    box-shadow: 2px 2px 12px -2px #000;
+    @include span-columns(3 of 12);
+
+    img {
+      /* TODO work on the responsiveness */
+      $width: 3 * $column;
+      max-height: $width;
+      height: $width;
+      width: 100%;
+      padding-bottom: $gutter;
+    }
+
+    padding: $gutter;
+    text-align: center;
+
+    .contact-title {
+      font-family: $light;
+      font-size: 2em;
+      @include clearfix;
+    }
+
+    .contact-info {
+      display: block;
+      font-family: $paragraph;
+      font-size: 1.2em;
+      min-height: 3em;
+
+      color: $grey;
+      a { color: $grey; }
+    }
+  }
+}
