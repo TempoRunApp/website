@@ -1,0 +1,43 @@
+@import "neat";
+
+@import "nav";
+
+@import "fonts";
+@import "colors";
+
+h1 {
+  font-family: $medium;
+  font-size: 4em;
+  color: $green;
+  margin: 0px;
+}
+
+span.byline {
+  font-family: $light;
+  font-size: 2em;
+}
+
+p {
+  font-family: $paragraph;
+  strong {
+    font-family: $paragraph-strong;
+  }
+}
+
+@import "sections";
+
+#top {
+  background-color: $green;
+  h1 { color: $grey; }
+}
+#what-is { background-color: $grey; }
+#aboutus { background-color: $grey; }
+#news { background-color: $grey; }
+#contact { background-color: $grey; }
+
+@import "top";
+@import "what_is";
+@import "reviews";
+@import "aboutus";
+@import "news";
+@import "contact";

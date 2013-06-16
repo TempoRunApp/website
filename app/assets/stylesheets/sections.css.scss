@@ -1,0 +1,19 @@
+@import "neat";
+
+$section-offset: 4 * $gutter;
+
+section {
+  position: relative;
+  .wrapper {
+    position: relative;
+    padding-top: $section-offset;
+    padding-bottom: 0.5 * $section-offset;
+    @include outer-container;
+    border-bottom: 1px solid #CCC;
+
+    .section-header {
+      text-align: center;
+      margin-bottom: $gutter;
+    }
+  }
+}

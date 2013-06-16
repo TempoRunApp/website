@@ -1,0 +1,22 @@
+#profiles {
+  .profile {
+    @include span-columns(4 of 12);
+
+    &:nth-child(3n) { @include omega; }
+    &:nth-child(4) { @include shift(2); }
+
+    margin-bottom: $gutter;
+
+    img {
+      @include span-columns(3 of 4);
+      @include shift(.5);
+      margin-bottom: $gutter;
+    }
+
+    .name {
+      font-family: $light;
+      font-size: 1.6em;
+      text-align: center;
+    }
+  }
+}

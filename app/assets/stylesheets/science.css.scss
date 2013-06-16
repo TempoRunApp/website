@@ -1,0 +1,35 @@
+@import "neat";
+@import "tile";
+
+#science #article {
+  @include span-columns(10 of 12);
+  @include shift(1);
+
+  font-size: 1.2em;
+}
+
+div.image {
+  @include tile;
+  @include span-columns(6 of 12);
+
+  display: block;
+  float: right;
+
+  margin: $gutter;
+
+  a {
+    display: block;
+    @include fill-parent;
+
+    img#good-form-running {
+      @include fill-parent;
+    }
+
+    text-decoration: none;
+
+    p {
+      font-size: .8em;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+/* Define styles for app/views/layouts/application.html.erb */
+@import "neat";
+@import "colors";
+@import "fonts";
+
+body {
+  margin: 0px;
+  background-color: $grey;
+}
+
+footer {
+  @include outer-container;
+  padding: $gutter 0;
+  font-family: $paragraph;
+}
+
+nav#main-nav {
+  .link {
+    @include span-columns(2);
+    &:nth-child(2) {
+      @include shift(6);
+    }
+  }
+}

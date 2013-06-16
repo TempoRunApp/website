@@ -1,0 +1,18 @@
+/*
+NOTE: Uncomment to see a visual representation of the grid-based layout.
+$visual-grid: true;
+$visual-grid-index: front;
+$visual-grid-color: #CCC;
+ */
+
+/* Use mixins provided by Bourbon and Neat */
+@import "bourbon";
+@import "grid_settings";
+@import "neat";
+
+/* Styles for the layouts defined in app/views/layouts */
+@import "layouts";
+
+/* Styles for pages */
+@import "welcome";
+@import "science";
