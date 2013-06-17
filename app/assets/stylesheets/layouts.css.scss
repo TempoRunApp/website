@@ -12,6 +12,9 @@ footer {
   @include outer-container;
   padding: $gutter 0;
   font-family: $paragraph;
+  #credits {
+    float: right;
+  }
 }
 
 nav#main-nav {
