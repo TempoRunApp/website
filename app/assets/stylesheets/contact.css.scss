@@ -5,7 +5,7 @@
     background-color: $green;
     border-radius: 4px;
     box-shadow: 2px 2px 12px -2px #000;
-    @include span-columns(3 of 12);
+    @include span-columns(4 of 12);
 
     img {
       /* TODO work on the responsiveness */
